@@ -1,0 +1,11 @@
+{
+  "name": "cdomeetpages",
+  "version": "1.0.0",
+  "description": "CDO-Meet",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css --style compressed"
+  },
+  "author": "Job_Kyungu_L",
+  "license": "ISC"
+}

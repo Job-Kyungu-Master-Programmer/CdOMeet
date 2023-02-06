@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+///Mixins 
+
+@mixin btn {
+    padding: .80em 0;
+    border-radius: .5em;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    min-width: 17.25em;
+    color: $--ColorBlog;
+    background-color: $--colorsBtns;
+    transition: opacity .2s ease-in-out;
+}
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+// For Reset h1,h2,h3,h4,h5,h6,p
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+
+// For Reset Input in Form
+@mixin resetInput {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+// h1 Style > 
+
+@mixin title {
+    margin-bottom: 1.35em; 
+    font-weight: 400;
+    font-size: 1.625em;
+    max-width: 30em;
+}
+
+
+// For Reset a 
+
+@mixin resetLink {
+    text-decoration: none;
+}
+
+// For reset List 
+@mixin resetList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+//Padding Left in Table In file Meeting.html & Table.scss
+@mixin LeftSpace {
+    padding: 0 0 0 1em;
+}
+
+//This helps the button which is in the Record page, it helps to change displayed pages
+
+@mixin recordFormBorder {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -.800em;
+    width: 0;
+    height: .173rem;
+    background-color: $--colorsBtns;
+    transition:  width .5s ease-in-out;
+}
+
+//Variables for Pop Up Design, When Opened and Closed
+
+@mixin PopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $height;
+    height: $height;
+    background-color: rgba(0, 0, 0, 0.534);
+    animation: IsBlood .5s ease-in-out;
+
+    @keyframes IsBlood {
+        0% {opacity: 0;}
+        100% {opacity: 5;}
+    }
+}
+
+
+@mixin PopContainer {
+    position: relative;
+    background-color: $--ColorBlog;
+    padding: 3em 0 1em 0;
+    border-radius: 1em;
+    animation: Scrolling .5s ease-in-out;
+
+    @keyframes Scrolling {
+        0% {transform: translateY(-10%);}
+        100% {transform: translateY(0);}
+    }
+}
+
+// Design For Button Close Pop ==> QuickMeet AND NewsFomMeet
+
+@mixin IconTimes {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+
+    &:hover {
+        transform: rotate(50deg);
+    }
+}
+
+
+// For Menu Designs List of Items
+@mixin MenuItems {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    width: 7%;
+}
+
+
+// For Calendar , Common Design for all Calendars
+
+@mixin AllCalendar {
+    padding: 1em 1em;
+    border-radius: .5em;
+    width: 19.4em;
+    min-height: 20em;
+    font-size: calc(0vw + .80em);
+    background-color: $--ColorBlog;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

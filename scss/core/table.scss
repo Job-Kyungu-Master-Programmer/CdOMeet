@@ -1,0 +1,173 @@
+
+
+
+// This File Contains The Design Of All The Elements That Are In The Table
+
+.table {
+    padding: 0 0 0 3em;
+    margin-bottom: 2.85em;
+    color:#56536F;
+    width: 95%;
+
+    &__head {
+        @include LeftSpace();
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        border-radius: .5em;
+        background: #e0e0e0;
+        width: 98%;
+        height: 2.562em;
+    }
+
+    &__head__span {
+        font-size: .850em;
+        font-weight: 400;
+        color: #6C6C6C;
+    }
+
+    &__body {
+        @include LeftSpace();
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+       display: flex; 
+    }
+
+    &__child {
+        display: flex;
+        align-items: center;
+        min-height: 3.354em;;
+    }
+
+    // The children one by one, dissect it
+    &__child__date {
+        width: 10%;
+    }
+
+    &__child__account {
+        width: 44%;
+    }
+    
+    &__child__connect {
+        @include flex();
+        color: $--ColorBlog;
+        height: 2em!important;
+        width: 38% ;
+    }
+    
+    &__connecting-content {
+        padding: .55em 1em .55em 2.40em;;
+        padding-left: 2em;
+        border-radius: .5em;
+        cursor: no-drop;
+        background: transparent url('/img/TableVideoIcon.svg') no-repeat 5% 50% / 9%;
+        background-color: $--colorsBtns;
+    }
+
+    &__connecting-move {
+        display: none;
+    }
+    //End Child Dissect
+
+    &__child__menu {
+        @include MenuItems();
+    }
+
+    &__rounded {
+        transition: fill .5s ease-in-out;
+    }
+
+    &__child__menu-btn {
+        position: absolute;
+        top: .55em;
+        right: .75em;
+        padding: .55em .97em;
+        border-radius: .5em;
+        @include flex();
+        @include resetInput();
+        cursor: pointer;
+        background-color: $--colorCatch;
+    }
+
+    &__menu {
+        position: relative;
+        @include resetList();
+        padding-top: .65em;
+        position: absolute;
+        top: 1.2em;
+        right: 3em;
+        text-align: left;
+        width: 8em;
+        background: $--ColorBlog;
+        box-shadow: 0 0 10px 15px rgba(223, 223, 223, 0.08);
+        transition: transform .5s ease-in-out;
+        transform-origin: top right;
+        transform: scale(0);
+        
+        &::after {
+            content:"";
+            position: absolute;
+            top: 0;
+            right: -1em;
+            width: 1em;
+            height: 1em;
+        }
+
+        &::before {
+            content:"";
+            position: absolute;
+            top: 0;
+            right: -.85em;
+            clip-path: polygon(0 0, 0% 100%, 100% 0);
+            background: $--ColorBlog;
+            width: 1.85em;
+            height: 2em;
+            z-index: -1;
+        }
+    }
+    
+    .OpenTableMenu {//Element for JS => app.js file 
+        transform: scale(1);
+    }
+
+    &__pencil {
+        margin-right: .50em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+    
+    &__deleteIcon {
+        margin-right: .50em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+    
+    &__menu__item {
+        padding: 0 .555em;
+        padding-left: 1em;
+        display: flex;
+        align-items: center;
+        font-size: .760em;
+        cursor: pointer;
+        min-height: 4em;
+        transition: background-color .5s ease-in-out;
+        z-index: 5;
+        
+        &:hover {
+            color: $--ColorBlog;
+            background-color: $--colorsBtns;
+
+            .table__deleteIcon {
+                stroke: $--ColorBlog;
+            }
+
+            .table__pencil {
+                stroke: $--ColorBlog;
+            }
+        }
+    }
+}

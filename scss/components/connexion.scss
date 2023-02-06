@@ -1,0 +1,278 @@
+
+
+// Pages For Connexion => Pres-Connexion.html 
+// This page helps to connect, to enter his password and Email so that the user is connected
+
+
+
+.pres-connexion {
+       height:$height;
+       color: $--colorInput;
+
+        @media (max-width: 1200px) {
+          font-size: calc(0vw + 1.11em);
+        }
+
+        @media (max-width: 918px) {
+          font-size: calc(0vw + 1.26em);
+        }
+
+        @media (max-width: 700px) {// Tablet
+          font-size: calc(0vw + 1.99em);
+        }
+
+        @media (max-width: 500px) {// Mobile ***
+            font-size: calc(0vw + 3em);
+        }
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: $height;
+        justify-content: center;
+
+        @media (max-width: 700px) {// Tablet
+            justify-items: auto;
+            flex-direction: column;
+        }
+
+        @media (max-width: 700px) and (min-width: 622px) {
+                padding-top: 6em;
+        }
+
+        @media (max-width: 500px) and (min-width: 444px) {// MOBILE ***
+                padding-top: 6.50em;
+        }
+
+        @media (max-width: 450px) and (min-width: 310px) {
+                padding-top: 7em;
+        }
+    }
+
+    &__element {
+        width: 45%;
+        
+        @media (max-width: 700px) {// Tablet and Mobile
+            width: 85.50%;
+        }
+    }
+
+    &__left {
+        z-index: 4;
+
+        //Image Desktop 
+            &::after {
+                content:"";
+                position: absolute;
+                transform: translateY(-60%);
+                right: 18.15em;
+                width: 57em;
+                height: 58em;
+                z-index: -5;
+                background: transparent url('/img/imageDesktop.svg') no-repeat 68% 55%/ 75%;
+            }
+    
+        @media (max-width: 1200px) {
+               &::after {
+                   right: 15em;
+                }
+        }
+        
+        @media (max-width: 918px) {
+               &::after {
+                   right: 11.30em;
+                }
+        }
+        
+        @media (max-width: 700px) {// Tablet  
+            position: relative;
+            margin-bottom: 5em;
+
+               &::after {//Image Desktop in none Display
+                  display: none;
+                }
+        }
+
+        @media (max-width: 500px) {// // MOBILE ***  
+            margin: 0;
+            margin-bottom: 2em;
+        }
+    }
+
+    &__title {
+        @include reset();
+        margin-bottom: .65em;
+        font-size: 2.813em;
+        font-weight: 400;
+        line-height: 119.81%;
+        max-width: 13em;
+
+        @media (max-width: 700px) {// Tablet and Mobile
+            max-width: 15em;
+        }
+    }
+
+    &__content {
+        @include reset();
+        margin-bottom: 2.50em;
+        font-size: 1.25em;
+        font-weight: 400;
+        max-width: 35em;
+
+        @media (max-width: 700px) {// Tablet and Mobile
+            margin-bottom: 3em;
+        }
+    }
+
+    &__button {
+        @include btn();
+        padding: 0;
+        padding: 1.1em 0;
+        min-width: 14em;
+        
+        > &:hover {
+            opacity: $opacity;
+        }
+    }
+
+    //Right Form 
+
+    &__right {
+       position: relative;
+       padding: 1.2em;
+       border-radius: 1.5em; 
+       max-width: 32em!important;
+       height: 23em;
+       background-color: $ColorForm;
+       z-index: 50;
+
+       &::before {// Image Mobile 
+           content: "";
+           position: absolute;
+           bottom: -5em;
+           left: -25em;
+           width:50%;
+           height:50%;
+           z-index: 1;
+           background: transparent url('/img/imageMobilePhone.svg') no-repeat center center / contain; 
+       }
+
+       @media (max-width: 700px) {// Tablet
+            display: none;
+
+            &::before {//Image Mobile
+               display: none;
+            }
+       }
+    }
+    
+    &__blog__preview__title {
+       @include reset();
+       margin-bottom: 1em; 
+       font-size: 1.625em;
+       font-weight: 500;
+    }
+    
+    &__blog__preview {
+       display: flex;
+       flex-direction: column;
+    }
+    
+    &__blog__preview__input {
+        @include resetInput();
+        margin-bottom: 1.65em;
+        padding: .90em .85em;
+        border-radius: .5em;
+        color: $--colorInput;
+        background-color:#393939;
+        width: 95.30%;
+
+        > &::placeholder {
+            color: $--colorBorderHeader;
+            transition: transform .5s ease-in-out;
+        }
+
+        &:focus::placeholder {
+            transform: translate(-100%);
+        }
+    }
+
+    &__blog__preview__reset__password {
+        margin-bottom: 2em;
+        @include resetInput();                  
+        display: inline-block;
+        color: inherit;
+        transition: opacity .3s linear;
+        max-width: 26%;
+
+        > &:hover {
+            opacity: .50;
+        }
+
+        @media (max-width: 500px ) {//MOBILE ***
+            max-width: 32%;
+        }
+    }
+
+    &__blog__preview__button__submit {
+        margin-bottom: 1.90em;
+        @include btn();
+        padding: 1.1em 0;
+
+        > &:hover {
+            opacity: $opacity;
+        }
+    }
+
+    &__blog__preview__confidentiality {
+        font-size: 0.875em;
+    }
+
+    &__blog__preview__link__confidentiality {
+        @include resetInput();          
+        color: $--colorsBtns;
+        transition: opacity .3s linear;
+
+        > &:hover {
+            opacity: $opacity;
+        }
+    }
+
+    &__Desktop__Design  {
+        @media (min-width: 701px) {
+            display: none;
+        }
+
+        @media (max-width: 700px) {
+            position: relative;
+            width: 70.50%;
+            height: 30em;
+            transform: translateX(-18%);
+            background: transparent url('/img/imageDesktop.svg') no-repeat 68% 55%/ contain;
+
+            &::before {
+                content:"";
+                position: absolute;
+                bottom: -4em;
+                left: -6em;
+                width:50%;
+                height:50%;
+                z-index: 1;
+                background: transparent url('/img/imageMobilePhone.svg') no-repeat center center / contain; 
+            }
+        }
+
+        @media (max-width: 500px) {// MOBILE ***
+            transform: translateX(-9.20%);
+
+            &::before {
+                left: -3.20em;
+                bottom: 1em;
+                width: 30%;
+                height: 30%;
+            }
+        }
+    }
+    
+}

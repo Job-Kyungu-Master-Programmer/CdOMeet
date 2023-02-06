@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+        <title>CDO Meet |  Response  </title>
+    </head>
+<body>
+    <!-- This is a page that returns a response to users after sending the request to reset their Password,
+    this page informs the user that there is a message that has arrived in their Email for the reset-->
+    <header class="header"><!--Begining Header-->
+        <div class="container header__container">
+            <a href="https://cdo-global.ru/" target="_blank" class="header__logo">
+                <img src="/img/logo.svg" alt="favicon" class="header--favicon">
+            </a>
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Помощь</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Демо-версия</a></li>
+                    <li class="header__item header__item-none"><a href="connexion.html" class="header__link">Вход</a></li>
+                    <!--This is none in the Desktop version, but it is displayed in Mobile-->
+                    <li class="header__item header__item-FormConnexion"><a href="FormConnexion.html" class="header__link">Вход</a></li>
+                </ul>
+                <!--Begining Burger Menu -->
+                <div id="ButtonBurger" class="icon nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div><!---End Burger Menu-->
+            </nav>
+        </div>
+     </header>
+     <!--End Header-->
+     <div class="response"><!--Begining response-->
+        <div class="container response__container">
+            <div class="response__blog">
+                <h1 class="response__title">
+                    Ловите!</h1>
+                <p class="response__content">
+                    Ловите! На Вашей почте инфо, как сбросить пароль
+                   </p>
+                <button class="response__btn">Авторизоваться</button>
+            </div>
+        </div>
+     </div>
+     <!--End response-->
+<script src="/js/Burger.js"></script>
+</body>
+</html>

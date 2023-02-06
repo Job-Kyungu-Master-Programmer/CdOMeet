@@ -1,0 +1,29 @@
+
+
+
+// This page contains user information, the time of their connection, 
+//the date, they can be deleted and edited too
+
+
+.dashboard {
+    flex-grow: 1;
+    padding-left: 18.75em;
+    min-height: calc(105% - 1em);
+    background-color: $ColorBackgroundDashboard;
+    
+    &__button__down {
+        margin-left: 3em;
+        @include btn();
+        padding: 1.15em 0;
+        background: transparent;
+        color: inherit;
+        border: 1px solid $--colorsBtns;
+        min-width: 16.5em;
+        transition: background-color .5s ease-in-out, color .3s linear;
+
+        &:hover {
+            color: $--ColorBlog;
+            background-color: $--colorsBtns;
+        }
+    }
+}

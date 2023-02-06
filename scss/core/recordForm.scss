@@ -1,0 +1,122 @@
+
+
+
+
+// Form in Record.html => Party RecordForm in RecordForm.scss
+
+.record__form {
+    position: relative;
+    padding: 2em 0 1.35em 3em;
+
+    &__title {
+       @include reset();
+       @include title();
+    }
+
+    &__top-list {
+        @include resetList();
+        margin-bottom: 1.26em;
+        border-bottom: 1px solid $ColorHeaderDashboard;
+        display: flex;
+    }
+
+    &__top__item {
+        position: relative;
+        @include resetLink();
+        @include resetInput();
+        display: block;
+        margin-right: 1.45em;
+        margin-bottom: .688em;
+        font-weight: 500;
+        font-size: .875em;
+        color: #56536F;
+        cursor: pointer;
+        transition: color .3s linear;
+
+        &:focus {
+            color: $--colorsBtns;
+
+            &::before {
+                @include recordFormBorder();
+                width: $height;
+            }
+        }
+    }
+
+    &__top__item:not(:last-child) {
+        color: $--colorsBtns;
+        
+         &::before {
+            @include recordFormBorder();
+            width: $height;
+         }
+    }
+
+    //Record Form For Bottom 
+    
+    &__bottom {
+        position: relative;
+    }
+
+    &__bottom__input {
+        @include resetInput();
+        margin-right: 1.56em;
+        padding: 1em;
+        border-radius: .5em;
+        background-color: $--ColorBlog;
+        color:#56536F;
+
+        &::placeholder {
+            font-size: .87em;
+            transition: transform .5s ease-in-out;
+        }
+
+        &:focus {
+            &::placeholder {
+                transform: translateX(-100%);
+            }
+        }
+
+        &:first-child {
+            width: 30em;
+        }
+
+        &:nth-child(3) {
+            cursor: pointer;
+            width: 15.95%;
+        }
+    }
+
+    &__bottom__btn {
+        @include btn();
+        padding: .85em 0;
+        border: 1px solid $--colorsBtns;
+        background: transparent;
+        color:#56536F;
+        min-width: 8em; 
+        transition: background-color .5s ease-in-out, color .3s linear;
+
+        &:hover {
+            color: $--ColorBlog;
+            background-color: $--colorsBtns;
+        }
+    }
+
+    .btnCalendar {
+        display: flex;
+        position: absolute;
+        top: .50em;
+        left: 48.5em;
+        width: 1.75em;
+        height: 70%;
+        z-index: 5;
+        border-radius: .5em;
+        cursor: pointer;
+        background: transparent url('/img/ClendarBlack.svg') no-repeat center center / 75%;
+        background-color: $--ColorBlog;
+    }
+
+    .btnCalendarToggle {//Element in JS ==> FILE App.js
+        background: transparent url('/img/Calendar.svg') no-repeat center center / 75%;
+    }
+}

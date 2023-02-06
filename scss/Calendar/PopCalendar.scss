@@ -1,0 +1,25 @@
+
+
+
+
+
+.PopUpMeetingCalendar {
+    position: absolute;
+    top: 21.5em;
+    left: 3em;
+    @include AllCalendar();
+}
+
+
+
+//Element For JS Toggle Element For Pop Calendar
+.PopCalendarToggle {
+    border: .1em solid rgb(218, 218, 218);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path .85s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+
+.PopBtnBackground   {
+    background: transparent url('/img/Calendar.svg') no-repeat center center / 45%;
+}

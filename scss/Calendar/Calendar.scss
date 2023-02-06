@@ -1,0 +1,114 @@
+
+
+
+// This File contains the Design in general of all the Calendars
+// of the web site, but each web page will have the Design of its 
+//own Calendar to itself according to its position
+
+.calendar {
+    
+
+    &__months {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__arrow {
+        height: 2em;
+        width: 2em;
+        background: transparent url('/img/Arrow-Left.svg') no-repeat center center / contain;
+        cursor: pointer;
+
+        &:last-child {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__title {
+        padding: .250em .450em;
+        border-radius: .5em;
+        color: inherit;
+        text-align: center;
+        font-weight: 400;
+        background-color: $--colorInput;
+    }
+
+    &__elementRed {
+        color: $ColorRed;
+        color: red;
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__weekDays {
+        display: flex;
+        align-items: center;
+        height: 2.30rem;
+        width: 100%;
+    }
+
+    &__weekDays div {
+        font-size: 1.1em;
+    }
+
+    &__weekDay {
+        flex-grow: 1;
+        text-align: center;
+        color: #B3B3B3;
+    }
+
+    &__weekend {
+        color: $ColorRed;
+    }
+
+    &__Days {
+        display: flex;
+        flex-wrap: wrap;
+        color: inherit;
+        width: 100%;
+    }
+
+    &__Days div {
+        margin: .2em .20em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border-radius: .4em;
+        cursor: pointer;
+        text-align: right!important;
+        min-width: calc(90% / 8);
+        height: 1.55em;
+        border: 1px solid transparent;
+        transition: border .5s ease-in-out;
+        
+        &:hover {
+            border: 1px solid $--colorsBtns;
+        }
+    }
+
+    &__date-low {
+        opacity: 0.3!important;
+    }
+    
+    &__day {
+        transition: background-color .5s ease-in-out,color .3s linear;
+        &:hover {
+            background-color: transparent;
+            color: rgb(107, 107, 107);
+            cursor: pointer;
+        }
+    }
+}
+
+
+//Element TOggle in JS file AppCalendar.js This is an Element that changes
+// Backgrounds From JS when you press on it, it changes Backgrounds
+.IconCalendarChangeBackground {
+    background: transparent url('/img/Calendar.svg') no-repeat center center / 65%;
+    transition: background .5s ease-in-out;
+}

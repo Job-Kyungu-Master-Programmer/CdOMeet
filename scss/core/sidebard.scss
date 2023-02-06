@@ -1,0 +1,114 @@
+
+
+
+//Pages Meeting  ==> meeting.html
+//Sidebar, this page contains the Logo of the Website in large Font and at the
+/// bottom the linne which leads to the conference to open a video-conference
+
+.sidebar {
+    position: fixed;
+    background-color: $--colorDefaultBlack;
+    min-width: 18.75em;
+    height: $height;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4.188em;
+        padding-top: 1.75em;
+    }
+
+    &__img {
+        @include resetInput();
+        width: $height;
+        height: $height;
+    }
+
+    &__logo {
+        @include resetInput();
+        width: 58%;
+        
+    }
+
+    &__list {
+        @include resetList();
+    }
+
+    &__item {
+       padding-left: 4em;
+       position: relative;
+       display: flex;
+       align-items: center;
+       border-left: .25em solid transparent;
+       min-height: 3.55em;
+       background: transparent;
+       transition: background-color .5s ease-in-out, border .5s ease-in-out;
+
+        > &:hover {
+            border-left: .25em solid $--colorsBtns;
+            background-color: $colorSidebarItem;
+        }
+    }
+
+    &__item:first-child {
+        border-left: .25em solid $--colorsBtns;
+        background-color: $colorSidebarItem;
+        
+        > a  {
+            color: $--colorsBtns;
+
+            > svg {
+                .sidebar__stroke {
+                    stroke: $--colorsBtns;
+                }
+            }
+        }
+    }
+
+    &__stroke {
+        transition: stroke .3s linear;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        @include resetLink();
+        @include resetInput();
+        font-size: 1.1em;
+        color: $--colorText;
+        transition: color .3s linear;
+
+
+        > &::after {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            color: $--colorsBtns;
+
+            svg {
+                .sidebar__stroke {
+                    stroke: $--colorsBtns;
+                }
+            }
+        }
+
+
+        svg {
+            margin-right: .40em;
+        }
+
+    }
+
+}

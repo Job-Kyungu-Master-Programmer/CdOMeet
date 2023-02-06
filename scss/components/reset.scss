@@ -1,0 +1,141 @@
+//#CDO-Meet
+//#CDO-Global
+//@cdo-global.ru
+
+// Response Page Design ==> reset.html
+.reset {
+    height:$height;
+
+    @media (max-width: 1200px) {
+        font-size: calc(0vw + 1.28em);
+    }
+
+    @media (max-width: 778px) {
+        font-size: calc(0vw + 1.66em);
+    }
+
+    @media (max-width: 700px) {
+        font-size: calc(0vw + 2em);
+    }
+
+    @media (max-width: 500px) {// MOBILE ***
+        font-size: calc(0vw + 4em);
+    }
+    
+    &__container {
+       @include flex();
+
+       @media (max-width: 500px) and (min-width: 320px) {
+           padding-top: 4em;
+       }
+    }
+
+    &__blog {
+        padding: 1.875em;
+        background-color: $--ColorBlog;
+        border-radius: 1.5em;
+        width: 41.375em;
+        min-height: 22.438em;
+        color: $--colorInputText;
+
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            width: 23.50em;
+            min-height: 23em;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 1em;
+        font-weight: 600;
+        font-size: 1.625em;
+    }
+
+    &__content {
+        margin: 0;
+        margin-bottom: 1.75em;
+        line-height: 135%;
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    &__input {
+        padding: 1em .55em;
+        margin-bottom: 1.455em;
+        border-radius: .5em;
+        border: none;
+        outline: none;
+        background-color: $--colorInput;
+        width: 97%;
+
+        &::placeholder {
+            transition: transform .5s ease-in-out;
+        }
+
+        > &:focus::placeholder {
+            transform: translateX(-100%);
+
+            @media (max-width: 400px) {
+                 transform: none;
+            }
+        }
+    }
+
+    &__captcha {
+        padding: 1em;
+        margin-bottom: 1.85em;
+        border-radius: .5em;
+        box-shadow: 0 3px 8px rgb(238, 238, 238);
+        max-width: 11.75em;
+        background: transparent url('/img/recaptcha-ar21.svg') no-repeat center right / 27%;
+
+        > label {
+            font-size: .85em;
+        }
+    }
+
+    &__inputCheckb {
+        margin-right: .75em;
+    }
+
+    &__list-btns {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button:first-child {
+        margin-right: 3em;
+        border: 0;
+        background: transparent;
+        color: $--colorSecondaryInput;
+        border-bottom: .1em solid $--colorSecondaryInput;
+        text-decoration: none;
+        transition: color .3s linear, border .3s linear;
+
+        &:hover {
+            color: $--colorsBtns;
+            border-color: $--colorsBtns;
+        }
+
+        @media (max-width: 500px) {
+            min-width: 8em;
+            margin-right: .85em;
+        }
+    }
+
+    &__button:not(:first-child) {
+       @include btn();
+       padding: 0;
+       padding: 1.2em 0;
+
+        &:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 500px) {
+            min-width: 14em;
+        }
+    }
+}

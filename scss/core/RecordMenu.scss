@@ -1,0 +1,11 @@
+
+
+
+
+
+
+.RecordTable {
+    &__child__menu {
+        @include MenuItems();
+    }
+}

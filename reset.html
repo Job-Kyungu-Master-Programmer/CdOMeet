@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+        <title>CDO Meet | Reset Email </title>
+    </head>
+<body>
+    <!--This page asks the user the confirmation question to be able to
+     offer him to enter his Email again finally to be able to reset his Password-->
+     <header class="header"><!--Begining Header-->
+        <div class="container header__container">
+            <a href="https://cdo-global.ru/" target="_blank" class="header__logo">
+                <img src="/img/logo.svg" alt="favicon" class="header--favicon">
+            </a>
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Помощь</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Демо-версия</a></li>
+                    <li class="header__item header__item-none"><a href="connexion.html" class="header__link">Вход</a></li>
+                    <!--This is none in the Desktop version, but it is displayed in Mobile-->
+                    <li class="header__item header__item-FormConnexion"><a href="FormConnexion.html" class="header__link">Вход</a></li>
+                </ul>
+                <!--Begining Burger Menu -->
+                <div id="ButtonBurger" class="icon nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div><!---End Burger Menu-->
+            </nav>
+        </div>
+     </header>
+     <!--End Header-->
+     <div class="reset"><!--Begining reset-->
+        <div class="container reset__container">
+            <form action="#" method="POST" class="reset__blog">
+                <h3 class="reset__title">Забыли пароль?</h3>
+                <p class="reset__content">Не стоит переживать! Пара минут и новый пароль уже на Вашей почте. Напомните только нам Вашу почту
+                                                    </p>
+                <input type="text" placeholder="Введите вашу почту" class="reset__input">
+                <div class="reset__captcha">
+                    <input type="checkbox" name="#" id="#" class="reset__inputCheckb"><label for="checkbox">я не робот</label>
+                </div>
+                <div class="reset__list-btns">
+                    <a href="/connexion.html" class="reset__button">Вернуться назад</a>
+                    <button class="reset__button">Восстановить пароль</button>
+                </div>
+            </form>
+        </div>
+     </div>
+     <!--End reset-->
+<script src="/js/Burger.js"></script>
+</body>
+</html>

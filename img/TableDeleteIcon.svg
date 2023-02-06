@@ -1,0 +1,7 @@
+<svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

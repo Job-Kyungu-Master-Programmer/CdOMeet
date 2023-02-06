@@ -1,0 +1,15 @@
+
+
+//This part of the codes represents the important part of the site, this part contains the
+// Sidebar & Dashboard space of the Conference when users will be connected
+
+//  Good distribution of Sidbard and Dashboard
+.main {
+    width: $height;
+    height: $height;
+    background-color: $--ColorBlog;
+}
+
+.main__container {
+    display: flex;
+}

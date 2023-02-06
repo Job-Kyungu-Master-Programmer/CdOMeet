@@ -1,0 +1,182 @@
+
+
+
+
+/// Header For CDO Meet => All Pges 
+
+
+
+
+.header {
+    position: fixed;
+    border-bottom: 1px solid rgb(29, 29, 29);
+    width: $height;
+    height: 5em;
+    z-index: 100;
+    background-color: $--colorDefaultBlack;
+
+    @media (max-width: 1128px) {
+        font-size: calc(0vw + 1.70em);
+    }
+
+    @media (max-width: 700px) {
+        font-size: calc(0vw + 2.2em);
+        height: 6.20em;
+    }
+
+    @media (max-width: 500px) {
+        font-size: calc(0vw + 3em);
+    }
+
+    @media (max-width: 450px) and (min-width: 320px) {
+        height: 8.35em;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.50em;
+        height: $height;
+
+        @media (max-width: 700px) {
+            align-items: center!important;
+        }
+    }
+
+    &__logo {
+        @include flex();
+        height: $height;
+    }
+
+    &--favicon {
+        width: 8em;
+        height: 6.20em;
+
+        @media (min-width: 701px) {
+            width: 6.50em;
+            height: 6em;
+        }
+
+        @media (max-width: 485px) and (min-width: 320px) {
+            width: 11em;
+            height: 8em;
+        }
+    }
+
+    &__navbar {
+        @include flex();
+        height: $height;
+    }
+
+    &__list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+    @media (max-width: 700px) {// MOBILE ***
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10em 0 0 5em;
+        display: flex;
+        flex-direction: column;
+        width: $height;
+        height: $height;
+        background-color: rgb(0, 0, 0);
+        display: none; 
+        animation: OpenRoot .80s ease-in-out;
+
+        @keyframes OpenRoot {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+       }
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 2.188em;
+
+        @media (max-width: 700px) {// MOBILE ***
+              margin-bottom: 3.50em;
+
+              //Animation Open Item 
+              &:nth-child(1) {
+                 animation: rotate1 .5s ease-in-out;
+
+                 @keyframes rotate1 {
+                    from { transform: translateX(-20px); opacity: 0;}
+                    to {transform: translateX(0); opacity: 1;}
+                 }
+               }
+               &:nth-child(2) {
+                animation: rotate2 .65s ease-in-out;
+
+                 @keyframes rotate2 {
+                    from { transform: translateX(-30px);opacity: 0;}
+                    to {transform: translateX(0); opacity: 1;}
+                }
+               }
+               &:nth-child(3) {
+                animation: rotate3 .85s ease-in-out;
+
+                 @keyframes rotate3 {
+                    from { transform: translateX(-40px); opacity: 0;}
+                    to {transform: translateX(0); opacity: 1;}
+                }
+             }
+        }
+    }
+
+    &__item-none {
+        @media (max-width: 700px) {//It's Element is also hidden when you're in Mobile version
+            display: none;
+        }
+    }
+
+    &__item-FormConnexion {// This Element is hidden when you are in Desktop version,
+        display: none;
+
+        @media (max-width: 700px) {
+            display: block;
+        }
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        @include resetInput();          
+        font-size: 1em;
+        font-weight: 400;
+        text-decoration: none;
+        color:  $--colorText;
+        border-bottom: .1em solid $--colorBorderHeader;
+        transition: color .3s linear, border .1s ease-in-out;
+
+        &:hover {
+            border: 0;
+            color: rgb(82, 82, 82);
+        }
+
+        // &::before {
+        //     width: 100%;
+        //     height: 25em;
+        //     background: $--colorBorderHeader;
+        //     background: red;
+        // }
+
+        @media (max-width: 700px) {// MOBILE ***
+            text-decoration: none;
+            border: 0;
+            font-size: 2.2em;
+            color: $ColorHeaderDashboard;
+        }
+    }
+
+}
+
+.MenuNavbarOpen { // Element JS ==> In Toggle For Open and Closed the Menu For All Pages Websites
+    display: flex;
+}

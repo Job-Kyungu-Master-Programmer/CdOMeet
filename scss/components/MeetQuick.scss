@@ -1,0 +1,95 @@
+
+
+
+
+.QuickMeet {
+      @include PopUp();
+      z-index: 100;
+    
+    &__container {
+        @include flex();
+        width: $height;
+        height: $height;
+    }
+
+    &__form {
+        @include PopContainer();
+        width: 37em;
+        min-height: 16.813em;
+    }
+
+    &__preview {
+        padding: 0 2.2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        @include reset();
+        margin-bottom: 1em;
+        font-weight: 500;
+        color: $--colorDefaultBlack;
+    }
+
+    &__content {
+        @include reset();
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+
+    &__input {
+        @include resetInput();
+        padding: 1em 1em;
+        border-radius: .5em;
+        background-color: $ColorBackgroundDashboard;
+        width: 93.60%;
+    }
+
+    &__blog-input {
+        position: relative;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__copy {
+        transition: stroke .3s linear;
+    }
+
+    &__span-bg {
+        position: absolute;
+        top: .75em;
+        right: .75em;
+        display: flex;
+        justify-content: flex-end;
+        width: 1.75em;
+        cursor: pointer;
+        background-color: $ColorBackgroundDashboard;
+        
+        &:hover .QuickMeet__copy {
+            stroke: $--colorsBtns;
+        }
+    }
+
+    &__response-backend {
+       margin-top: .67em;
+       color: $--colorsBtns;
+       transition: opacity .5s ease-in-out;
+       opacity: 0;
+    }
+
+    &__button {
+        @include flex();
+        border-radius: 50%;
+        width: 4.75em;
+        height: 4.75em;
+        cursor: pointer;
+        background-color: $--colorsBtns;
+    }
+
+    &__times {
+        @include IconTimes();
+    }
+
+}

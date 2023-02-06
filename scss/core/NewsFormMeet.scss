@@ -1,0 +1,182 @@
+
+
+
+
+
+.NewsFormMeet {
+       @include PopUp();
+       z-index: 100;
+       
+
+    &__container {
+        @include flex();
+        width: $height;
+        height: $height;
+    }
+
+    &__form {
+        @include PopContainer();
+        padding: 1.85em 0 0 0;
+        width: 38em;
+        height: 33em;
+        color:#56536F;
+        
+    }
+
+    &__title {
+        @include reset();
+        margin-bottom: .85em;
+        font-size: 1.75em;
+        font-weight: 400;
+        color: $--colorDefaultBlack;
+    }
+
+    &__preview {
+        padding: 0 2.2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        @include resetInput();
+        padding: .95em 1em;
+        margin-bottom: 1em;
+        border-radius: .5em;
+        color:#56536F;
+        background-color: $ColorBackgroundDashboard;
+    }
+
+    &__preview__middle {
+        position: relative;
+        display: flex;
+    }
+
+    &__preview__middle__input {
+        margin-right: .85em;
+
+        &:first-child {
+            width: 45%;
+        }
+    }
+
+    &__span-before {
+        display: block;
+        position: absolute;
+        top: .35em;
+        left: 13.98em;
+        width: 3em;
+        height: 60%;
+        cursor: pointer;
+        background-color: transparent;
+        background: transparent url('/img/ClendarBlack.svg') no-repeat center center / 45%;
+    }
+
+    &__btn__settings {
+       @include resetInput();
+       margin-bottom: 1em;
+       display: flex;
+       align-items: center;
+       font-size:.938em;
+       color:#56536F;
+       cursor: pointer;
+       max-width: 50%;
+       transition: color .3s linear;
+
+       &:hover {
+          color: $--colorsBtns;
+         
+          .NewsFormMeet__line {
+              stroke: $--colorsBtns;
+              transform: translateX(2px);
+          }
+       }
+    }
+
+    &__line {
+        transition: transform .5s ease-in-out, stroke .3s linear;
+        margin-right: .50em;
+    }
+
+    &__preview__bottom {
+        padding: .85em 02.2em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        border: .1em solid $ColorHeaderDashboard;
+        border-right: .1em transparent;
+        border-left: .1em transparent;
+    }
+
+    &__preview__bottom {
+        > label {
+            margin-bottom: .815em;
+            font-size: 1em;
+        }
+    }
+
+    &__response-backend {
+        font-weight: 500;
+        font-size: .845em;
+        max-width: $height;
+        color: $ColorRed;
+    }
+
+    &__button-submit {
+        @include btn();
+        margin-left: 2.2em;
+        min-width: 12.313em;
+        transition: opacity .5s ease-in-out;
+
+        &:hover {
+            opacity: .70;
+        }
+    }
+
+    &__blog-bg {
+        position: relative;
+    }
+
+    &__input-bg {
+        width: 94%;
+    }
+
+    &__span-copy {
+        display: block;
+        position: absolute;
+        top: .75em;
+        right: .55em;
+        cursor: pointer;
+
+        &:hover {
+            .NewsFormMeet__Copy {
+                stroke: $--colorsBtns;
+                transform: rotate(-2deg);
+            }
+        }
+    }
+
+    &__Copy {
+        transition: transform .2s ease-in-out, stroke .5s linear;
+    }
+
+    &__times {
+      @include IconTimes();
+    }
+
+    .NewsFormMeet__date {
+        display: block;
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3em;
+            height: 100%;
+            border-radius:  0 .5em .5em 0;
+            background: transparent url('/img/ClendarBlack.svg') no-repeat center center / 45%;
+            background-color: inherit;
+        }
+    }
+}

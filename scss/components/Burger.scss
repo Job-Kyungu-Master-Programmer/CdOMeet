@@ -1,0 +1,57 @@
+
+
+//Desgin Burger Menu For All Pages in Website ;
+
+
+.nav-icon {
+       position: relative;
+       display: inline-block;
+       width: 35px;
+       height: 30px;
+       cursor: pointer;
+
+       @media (min-width: 701px) {
+           display: none;
+       }
+    }
+
+   .nav-icon span{
+       position: absolute;
+       border-radius: 0;
+       transition: .33s cubic-bezier(.8, .5, .2, 1.4);
+       width:100%;
+       height: .23em;
+       background-color: $ColorHeaderDashboard;
+    }
+
+   .nav-icon span:nth-child(1) {
+        top : 0;
+        left: 0;
+    }
+
+   .nav-icon span:nth-child(2) {
+        top: 13px;
+        left: 0;
+    }
+
+   .nav-icon span:nth-child(3) {
+        bottom: 0;
+        left: 0;
+    }
+
+   .nav-icon.open span:nth-child(1) {
+        transform: rotate(45deg) scaleX(0.7);
+        top: 13px;
+        left: -8px;
+    }
+
+   .nav-icon.open span:nth-child(2) {
+        transform: scale(0);
+        transition-duration: 50ms
+    }
+
+   .nav-icon.open span:nth-child(3) {
+        transform: rotate(-45deg) scaleX(0.7);
+        top: 13px;
+        left: 7px;      
+    }

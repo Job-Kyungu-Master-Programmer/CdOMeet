@@ -1,0 +1,139 @@
+
+
+
+
+
+// This part displays contact information, 
+//and gives access to see which user is connected
+
+.dashboard__header {
+
+    &__container {
+        min-height: 8em;
+        border-bottom: 1px solid $ColorHeaderDashboard;
+    }
+
+    &__top {
+        padding-left: 3em;
+        display: flex;
+        align-items: center;
+        background-color: $ColorHeaderDashboard;
+        height: 2.375em;
+    }
+
+    &__top__link:not(:last-child) {
+        margin: 0 1.067em 0 2.313em;
+        @include resetInput();
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1em;
+        color: $--colorBorderHeader;
+        transition: color .3s linear;
+
+        > &:hover {
+            color: $--colorsBtns;
+        }
+    }
+
+    &__top__link:last-child {
+        color: $--colorsBtns;
+        transition: color .3s linear;
+        @include resetInput();
+
+        > &:hover {
+            color: $--colorBorderHeader;
+        }
+    }
+
+    &__bottom {
+        padding: 0 8em 0 3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.600em;
+    }
+
+    &__personal-account {
+        @include reset();
+        font-size: 1.27em;;
+        font-weight: 400;
+        line-height: 130%;
+        max-width: 27em;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;               
+    }
+
+    &__button {
+        margin-right: 1.30em;
+        @include btn();
+        border: 1px solid transparent;
+        min-width: 12.625em;
+        transition: background-color .5s ease-in-out, color .3s linear;
+
+        &:hover {
+            border: 1px solid $--colorsBtns;
+            color: $colorSidebarItem;
+            background: transparent;
+        }
+    }
+
+    &__last-btn {
+        transition: background-color .5s ease-in-out, color .3s linear;
+        border: 1px solid $--colorsBtns;
+        color: $--colorSecondaryInput;
+        background: transparent;
+
+        &:hover {
+            color: $--ColorBlog;
+            background: $--colorsBtns;
+        }
+    }
+
+    &__item__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item__blog-img {
+        margin-right: 1em;
+        @include flex();
+        border-radius: 50%;
+        background: #D3D3D3;
+        cursor: pointer;
+        min-width: 2.75em;
+        height: 2.75em;
+    }
+
+    &__item__img {
+        width: 75%;
+        height: 75%;
+    }
+
+    &__item__user-account {
+
+        > button {
+            @include resetInput();
+            cursor: pointer;
+            padding: 0;
+            font-size: .815em;
+            color: #969696;
+            transition: color .3s linear;
+
+            &:hover {
+                color: $--colorsBtns;   
+            }
+        }
+    }
+
+    &__item__user-name {
+        @include reset();
+        margin-bottom: .25em;
+        font-weight: 500;
+        font-size: 1em;
+        max-width: 7em;
+    }
+}

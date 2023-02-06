@@ -1,0 +1,54 @@
+
+
+
+
+
+//This is a page, which helps the user enter the date to start the conference in Page Web meeting.html
+.dashboard__form {
+    padding: 2em 0 1em 3em;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+       @include reset();
+       @include title();
+    }
+
+    &__bottom__blog {
+       position: relative;
+       display: flex;
+       align-items: center;
+
+       > label {
+           margin-right: 2em;
+           color: #3f4353c2;
+       }
+    }
+
+    &__bottom__dateInput {
+       padding: 1em .80em;
+       @include resetInput();
+       font-size: 0.875em;
+       font-weight: 400;
+       border-radius: .5em;
+       border: .1em solid #E1E1E1;
+       pointer-events:painted;
+       cursor: pointer;
+       background-color: $--ColorBlog;
+       color: #3F4353;
+       width: 18.1em;
+    }
+
+    &__bottom__span-before {
+        position: absolute;
+        top: .45em;
+        left: 27.50em;
+        border-radius: .5em;
+        width: 1.85em;
+        height: 1.85em;
+        cursor: pointer;
+        background: transparent url('/img/ClendarBlack.svg') no-repeat center center / 65%;
+        background-color: $--ColorBlog;
+        transition: background .5s ease-in-out;
+    }
+}

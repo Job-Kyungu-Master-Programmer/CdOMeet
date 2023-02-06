@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <link rel="stylesheet" href="/css/vanilla.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+        <title>CDO-Meet | Meeting </title>
+   </head>
+<body>
+  <!--This page is made to help CDO-Meet users to conference with each other, and to
+    use direct videos, Here the administrator has the right to delete and edit users-->
+    <div class="main">
+       <div class="container main__container">
+         <!--Begining Sidebar-->
+         <aside class="sidebar">
+           <div class="container sidebar__container">
+             <div class="sidebar__top">
+               <a href="" target="_blank" class="sidebar__logo">
+                 <img src="./img/logo.svg" alt="CDO Global. EdTech - 1C, Moodle, AI, WEB, Security" class="sidebar__img">
+                </a>
+              </div>
+                    <div class="sidebar__bottom">
+                        <ul class="sidebar__list">
+                           <li class="sidebar__item"><a href="meeting.html" class="sidebar__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <rect class="sidebar__stroke" x="2.99609" y="3.9967" width="18.0075" height="13.0054" rx="2" stroke="rgb(117, 117, 117)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path class="sidebar__stroke" d="M7.49805 20.0034H16.5018" stroke="rgb(117, 117, 117)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             </svg>Конференции</a></li>
+                           <li class="sidebar__item"><a href="#" class="sidebar__link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path class="sidebar__stroke" d="M18.3639 5.63604C21.8787 9.15076 21.8787 14.8492 18.3639 18.3639C14.8492 21.8787 9.15074 21.8787 5.63604 18.3639C2.12132 14.8492 2.12132 9.15074 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.3639 5.63604" stroke="rgb(117, 117, 117)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path class="sidebar__stroke" d="M14.8284 9.17157C16.3905 10.7337 16.3905 13.2663 14.8284 14.8284C13.2663 16.3905 10.7337 16.3905 9.17157 14.8284C7.60947 13.2663 7.60947 10.7337 9.17157 9.17157C10.7337 7.60947 13.2663 7.60947 14.8284 9.17157" stroke="rgb(117, 117, 117)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                             </svg>Записи</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!--End Sidebar-->
+            <!--Begining QuickMeet -->
+            <div class="QuickMeet">
+              <div class="OutPut"></div>
+              <div class="QuickMeet__container">
+               <form action="#" class="QuickMeet__form"><svg class="QuickMeet__times" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.07117 8.48518L0 15.5563L1.41421 16.9706L8.48538 9.8994L15.5566 16.9707L16.9709 15.5564L9.89959 8.48518L16.9706 1.41421L15.5563 0L8.48538 7.07097L1.4145 9.42945e-05L0.000290394 1.41431L7.07117 8.48518Z" fill="#E0E0E0"/>
+                </svg>
+                  <div class="QuickMeet__preview">
+                      <h2 class="QuickMeet__title">Ваша встреча уже ждет</h2>
+                      <p class="QuickMeet__content">Вот ссылка. Она уже в Вашем буфере. Отправьте ее участникам</p>
+                     <div class="QuickMeet__blog-input"><input type="text" class="QuickMeet__input" placeholder="www.ccslrf.com/fefds/3ef/ewfc/1234/888/3ef/3ef/ewfc/1234/888/3ef"/><span class="QuickMeet__span-bg">
+                      <svg class="QuickMeet__copy" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="QuickMeet__copy" x="7.99805" y="7.99792" width="14.0058" height="14.0058" rx="2" stroke="#3F4353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="QuickMeet__copy" d="M7.99776 18.002H5.99693C4.8919 18.002 3.99609 17.1062 3.99609 16.0012V5.99705C3.99609 4.89202 4.8919 3.99622 5.99693 3.99622H16.0011C17.1061 3.99622 18.0019 4.89202 18.0019 5.99705V7.99788" stroke="#3F4353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                     </span>
+                   <span class="QuickMeet__response-backend">Ссылка скопирована</span></div>
+                 <div class="QuickMeet__button"><svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 10.5L0.250001 20.4593L0.250002 0.540707L16 10.5Z" fill="white"/>
+                    </svg></div>  
+                </div>  
+              </form>
+             </div>
+          </div>
+         <!--End Quick Meet-->
+            <!--Begining Dashboard-->
+             <div class="dashboard">
+                <header class="dashboard__header"><!--Begining Header in Dashboard-->
+                    <div class="dashboard__header__container">
+                        <div class="dashboard__header__top">
+                            <div class="dashboard__hotline"><span>Помощь</span><a href="tel:88003014043" class="dashboard__header__top__link">8 800 301 40 43 
+                            </a><a href="mailto:info@cdo-global.ru" class="dashboard__header__top__link">info@cdo-global.ru</a></div>
+                        </div>
+                        <div class="dashboard__header__bottom">
+                            <h2 class="dashboard__header__personal-account">Личная комната Московского государственного областного университета</h2>
+                            <div class="dashboard__header__list">
+                                <div class="dashboard__header__item"><button class="dashboard__button__first dashboard__header__button">Быстрая встреча</button></div>
+                                <div class="dashboard__header__item"><button class="dashboard__header__last-btn dashboard__header__button">Запланировать</button></div>
+                                <div class="dashboard__header__item dashboard__header__item__user"><div class="dashboard__header__item__blog-img"><img src="./img/ImageUser.svg" class="dashboard__header__item__img"/></div>
+                                <div class="dashboard__header__item__user-account"><h3 class="dashboard__header__item__user-name">Андрей С</h3>
+                                <button>Выход</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header><!--End header in Dashboard-->
+                <div class="record dashboard__middle"><!--Beginin Meeting Part-->
+                    <form action="#" method="POST" class="record__form">
+                          <div class="record__form__container">
+                              <div class="record__form__top">
+                                  <h1 class="record__form__title">Записи</h1>
+                                  <ul class="record__form__top-list">
+                                    <a href="#" class="record__form__top__item">Все записи</a> 
+                                    <a  href="#" class="record__form__top__item">Быстрые конференции</a>
+                                  </ul>
+                              </div>
+                              <div class="record__form__bottom">
+                                   <input type="search" class="record__form__bottom__input" placeholder="Введите для поиска"><span class="RecordbtnCalendar btnCalendar"></span><input type="text" disabled placeholder="Выберите дату поиска" class="record__form__bottom__input">
+                                       <!-- Begining Calendar -->
+                                 <!--Here we put the Calendar which is created with 
+                                   these pieces of the codes below, this is generated from JS 
+                                    ===> ==> in File : RecordCalendar.scss--> 
+                                    <div class="calendar RecordCalendar">
+                                      <div class="calendar__preview">
+                                         <div class="calendar__months">
+                                           <div class="calendar__arrow"id="arrow-left"></div>
+                                           <div class="calendar__dates">
+                                             <h3 class="calendar__title">Января</h3>
+                                             <p class="calendar__content"></p>
+                                           </div>
+                                           <div class="calendar__arrow" id="arrow-right"></div>
+                                         </div>
+                                           <div class="calendar__weekDays">
+                                             <div class="calendar__weekDay">Пн</div>
+                                             <div class="calendar__weekDay">Вт</div>
+                                             <div class="calendar__weekDay">Ср</div>
+                                             <div class="calendar__weekDay">Чт</div>
+                                             <div class="calendar__weekDay">Пт</div>
+                                             <div class="calendar__weekDay calendar__weekend">Сб</div>
+                                             <div class="calendar__weekDay calendar__weekend">Вс</div>
+                                           </div>
+                                           <div class="calendar__Days">
+                                              <div class="calendar__prev-date calendar__date-low">26</div>
+                                              <div class="calendar__prev-date calendar__date-low">27</div>
+                                              <div class="calendar__prev-date calendar__date-low">28</div>
+                                              <div class="calendar__prev-date calendar__date-low">29</div>
+                                              <div class="calendar__prev-date calendar__date-low">30</div>
+                                              <div class="calendar__prev-date calendar__date-low calendar__elementRed">31</div>
+                                              <div class="calendar__prev-date calendar__elementRed">1</div>
+                                               <div class="calendar__day">2</div>
+                                               <div class="calendar__day">3</div>
+                                               <div class="calendar__day">4</div>
+                                               <div class="calendar__day">5</div>
+                                               <div class="calendar__day">6</div>
+                                               <div class="calendar__day calendar__elementRed">7</div>
+                                               <div class="calendar__day calendar__elementRed">8</div>
+                                               <div class="calendar__day">9</div>
+                                               <div class="calendar__day">10</div>
+                                               <div class="calendar__day">12</div>
+                                               <div class="calendar__day">12</div>
+                                               <div class="calendar__day">13</div>
+                                               <div class="calendar__day calendar__elementRed">14</div>
+                                               <div class="calendar__day calendar__elementRed">15</div>
+                                               <div class="calendar__day">16</div>
+                                               <div class="calendar__day">17</div>
+                                               <div class="calendar__day">18</div>
+                                               <div class="calendar__day">19</div>
+                                               <div class="calendar__day">20</div>
+                                               <div class="calendar__day calendar__elementRed">21</div>
+                                               <div class="calendar__day calendar__elementRed">22</div>
+                                               <div class="calendar__day">23</div>
+                                               <div class="calendar__day today">24</div>
+                                               <div class="calendar__day">25</div>
+                                               <div class="calendar__day">26</div>
+                                               <div class="calendar__day">27</div>
+                                               <div class="calendar__day calendar__elementRed">28</div>
+                                               <div class="calendar__day calendar__elementRed">29</div>
+                                               <div class="calendar__day">30</div>
+                                               <div class="calendar__da calendar__elementRedy">31</div>
+                                               <div class="calendar__next-date calendar__date-low">1</div>
+                                               <div class="calendar__next-date calendar__date-low">2</div>
+                                               <div class="calendar__next-date calendar__date-low">3</div>
+                                               <div class="calendar__next-date calendar__date-low calendar__elementRed">4</div>
+                                               <div class="calendar__next-date calendar__date-low calendar__elementRed">5</div>
+                                           </div>
+                                      </div>
+                                   </div><!--End Calendar-->
+                                  <!--End Calendar-->
+                                   <button class="record__form__bottom__btn">Поиск</button>
+                              </div>
+                          </div>
+                    </form>
+                    <div class="dashboard__meeting">
+                        <!--Begining Table-->
+                        <article class="table">
+                          <div class="table__head"><span class="table__head__span">Сегодня</span></div>
+                            <div  class="table__body">
+                               <div class="table__list">
+                                  <div class="table__child table__child__date">11:00 - 12:00</div>
+                                  <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                  <div class="table__child table__child__connect"><div class="table__connecting-content">Идет. Подключиться</div></div>
+                                  <div class="table__child table__child__menu"><button id="BtnMenu-s1" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                  <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul id="MenuTabS-1" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>Редактировать</li>
+                                  <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>Удалить</li></ul></div>
+                               </div>
+                               <div class="table__list">
+                                  <div class="table__child table__child__date">11:00 - 12:00</div>
+                                  <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                  <div class="table__child table__child__connect"><div class="table__connecting-content table__connecting-move">Идет. Подключиться</div></div>
+                                  <div class="table__child table__child__menu"><button id="BtnMenu-s2" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                  <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul  id="MenuTabS-2" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>Редактировать</li>
+                                  <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>Удалить</li></ul></div>
+                                </div>
+                                <div class="table__list">
+                                  <div class="table__child table__child__date">11:00 - 12:00</div>
+                                  <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                  <div class="table__child table__child__connect"><div class="table__connecting-content table__connecting-move">Идет. Подключиться</div></div>
+                                  <div class="table__child table__child__menu"><button id="BtnMenu-s3" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                  <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul id="MenuTabS-3" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>Редактировать</li>
+                                  <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>Удалить</li></ul></div>
+                                </div>
+                                <div class="table__list">
+                                   <div class="table__child table__child__date">11:00 - 12:00</div>
+                                   <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                   <div class="table__child table__child__connect"><div class="table__connecting-content">Идет. Подключиться</div></div>
+                                   <div class="table__child table__child__menu"><button id="BtnMenu-s4" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                   <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul id="MenuTabS-4" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>Редактировать</li>
+                                   <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>Удалить</li></ul></div>
+                                 </div>
+                            </div>
+                          <div class="table__head"><span class="table__head__span">Вт, 22 ноября 2022</span></div>
+                            <div class="table__body">
+                               <div class="table__list">
+                                   <div class="table__child table__child__date">11:00 - 12:00</div>
+                                   <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                   <div class="table__child table__child__connect"><div class="table__connecting-content  table__connecting-move">Идет. Подключиться</div></div>
+                                   <div class="table__child table__child__menu"><button id="BtnMenu-s5" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                   <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul id="MenuTabS-5" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>Редактировать</li>
+                                   <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>Удалить</li></ul></div>
+                                 </div>
+                                 <div class="table__list">
+                                    <div class="table__child table__child__date">11:00 - 12:00</div>
+                                    <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                    <div class="table__child table__child__connect"><div class="table__connecting-content  table__connecting-move">Идет. Подключиться</div></div>
+                                    <div class="table__child table__child__menu"><button id="BtnMenu-s6" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                    <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul id="MenuTabS-6" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>Редактировать</li>
+                                    <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>Удалить</li></ul></div>
+                                  </div>
+                                  <div class="table__list">
+                                   <div class="table__child table__child__date">11:00 - 12:00</div>
+                                   <div class="table__child table__child__account">Созвон с ректорами Московского государственного областного университета</div>
+                                   <div class="table__child table__child__connect"><div class="table__connecting-content  table__connecting-move">Идет. Подключиться</div></div>
+                                   <div class="table__child table__child__menu"><button id="BtnMenu-s7" class="table__child__menu-btn"><svg class="table-rounded" width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <rect class="table-rounded" width="4" height="4" rx="2" fill="#676B7B"/><rect class="table-rounded" y="7" width="4" height="4" rx="2" fill="#676B7B"/>
+                                   <rect class="table-rounded" y="14" width="4" height="4" rx="2" fill="#676B7B"/></svg></button><ul id="MenuTabS-7" class="table__menu"><li class="table__menu__item"><svg class="table__pencil" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path class="table__pencil" d="M14.6164 8.4333L11.5664 5.3833" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__pencil" fill-rule="evenodd" clip-rule="evenodd" d="M5.20917 17.5001H2.5V14.7909C2.5 14.5701 2.5875 14.3576 2.74417 14.2017L13.8558 3.08922C14.1817 2.76339 14.7092 2.76339 15.0342 3.08922L16.91 4.96506C17.2358 5.29089 17.2358 5.81839 16.91 6.14339L5.79833 17.2559C5.6425 17.4126 5.43 17.5001 5.20917 17.5001V17.5001Z" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>Редактировать</li>
+                                   <li class="table__menu__item"><svg  class="table__deleteIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path class="table__deleteIcon"  d="M4.16699 5.83329H15.8337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M15 5.83337V15C15 15.9209 14.2542 16.6667 13.3333 16.6667H6.66667C5.74583 16.6667 5 15.9209 5 15V5.83337" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M12.5 3.12504H7.5" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M8.33366 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path class="table__deleteIcon"  d="M11.6667 9.16663V13.3333" stroke="#878787" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   </svg>Удалить</li></ul></div>
+                                 </div>
+                            </div>
+                       </article>
+                       <!--End Table-->
+                    </div>
+                </div>
+            <!--End Meeting Part-->
+             </div>
+            <!--End Dashboard-->
+            <!--Begining NewsFormMeet-->
+              <div class="NewsFormMeet">
+                  <div class="NewsFormMeet__container">
+                     <form action="#" method="post" enctype="#" class="NewsFormMeet__form"><svg class="NewsFormMeet__times" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="NewsFormMeet__times" fill-rule="evenodd" clip-rule="evenodd" d="M7.07117 8.48518L0 15.5563L1.41421 16.9706L8.48538 9.8994L15.5566 16.9707L16.9709 15.5564L9.89959 8.48518L16.9706 1.41421L15.5563 0L8.48538 7.07097L1.4145 9.42945e-05L0.000290394 1.41431L7.07117 8.48518Z" fill="#E0E0E0"/>
+                        </svg>
+                         <div class="NewsFormMeet__preview">
+                            <h2 class="NewsFormMeet__title">Новая встреча</h2>
+                            <input type="text" class="NewsFormMeet__input" placeholder="Встреча CDO.Meet <ТекущаяДата>" required/><div class="NewsFormMeet__blog-bg"><input type="text" class="NewsFormMeet__input NewsFormMeet__input-bg" placeholder="Алиса" required/><span class="NewsFormMeet__span-copy">
+                                <svg class="NewsFormMeet__Copy" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect class="NewsFormMeet__Copy" x="7.99805" y="7.99792" width="14.0058" height="14.0058" rx="2" stroke="#3F4353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path class="NewsFormMeet__Copy" d="M7.99776 18.002H5.99693C4.8919 18.002 3.99609 17.1062 3.99609 16.0012V5.99705C3.99609 4.89202 4.8919 3.99622 5.99693 3.99622H16.0011C17.1061 3.99622 18.0019 4.89202 18.0019 5.99705V7.99788" stroke="#3F4353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg></span></div>
+                            <div class="NewsFormMeet__preview__middle">
+                              <input type="text" disabled class="NewsFormMeet__input NewsFormMeet__preview__middle__input NewsFormMeet__date" placeholder="23 января 2023" required/><span class="NewsFormMeet__span-before"></span>
+                              <input type="time" class="NewsFormMeet__input NewsFormMeet__preview__middle__input" placeholder="18:00" required/>
+                            </div>
+                            <div class="NewsFormMeet__btn__settings"><svg class="NewsFormMeet__line" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="NewsFormMeet__line" d="M14.1213 9.87868C15.2929 11.0502 15.2929 12.9497 14.1213 14.1213C12.9497 15.2929 11.0502 15.2929 9.87868 14.1213C8.70711 12.9497 8.70711 11.0502 9.87868 9.87868C11.0502 8.70711 12.9497 8.70711 14.1213 9.87868" stroke="#3F4353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path class="NewsFormMeet__line" fill-rule="evenodd" clip-rule="evenodd" d="M16.18 18.725V18.725C16.683 19.228 17.5 19.228 18.003 18.725L18.725 18.003C19.228 17.5 19.228 16.683 18.725 16.18V16.18C18.343 15.798 18.231 15.225 18.441 14.727C18.463 14.674 18.485 14.621 18.506 14.567C18.689 14.101 19.143 13.801 19.643 13.801H19.71C20.422 13.801 20.999 13.224 20.999 12.512V11.491C20.999 10.779 20.422 10.202 19.71 10.202H19.643C19.143 10.202 18.689 9.901 18.506 9.436C18.485 9.382 18.463 9.329 18.441 9.276C18.231 8.778 18.343 8.205 18.725 7.823V7.823C19.228 7.32 19.228 6.503 18.725 6L18.003 5.278C17.5 4.775 16.683 4.775 16.18 5.278V5.278C15.798 5.66 15.225 5.772 14.727 5.562C14.674 5.54 14.621 5.518 14.567 5.497C14.101 5.311 13.8 4.856 13.8 4.356V4.289C13.8 3.577 13.223 3 12.511 3H11.49C10.777 3 10.2 3.577 10.2 4.289V4.356C10.2 4.856 9.899 5.31 9.434 5.493C9.38 5.515 9.327 5.536 9.274 5.559C8.776 5.769 8.203 5.657 7.821 5.275V5.275C7.318 4.772 6.501 4.772 5.998 5.275L5.275 5.997C4.772 6.5 4.772 7.317 5.275 7.82V7.82C5.657 8.202 5.769 8.775 5.559 9.273C5.536 9.327 5.515 9.38 5.494 9.434C5.311 9.899 4.856 10.2 4.356 10.2H4.289C3.577 10.2 3 10.777 3 11.489V12.51C3 13.223 3.577 13.8 4.289 13.8H4.356C4.856 13.8 5.31 14.101 5.493 14.566C5.514 14.62 5.536 14.673 5.558 14.726C5.768 15.224 5.656 15.797 5.274 16.179V16.179C4.771 16.682 4.771 17.499 5.274 18.002L5.996 18.724C6.499 19.227 7.316 19.227 7.819 18.724V18.724C8.201 18.342 8.774 18.23 9.272 18.44C9.325 18.462 9.378 18.484 9.432 18.505C9.898 18.688 10.198 19.142 10.198 19.642V19.709C10.198 20.421 10.775 20.998 11.487 20.998H12.508C13.22 20.998 13.797 20.421 13.797 19.709V19.642C13.797 19.142 14.098 18.688 14.563 18.505C14.617 18.484 14.67 18.462 14.723 18.44C15.224 18.231 15.797 18.343 16.18 18.725V18.725Z" stroke="#3F4353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>Открыть настройки комнаты</div>
+                        </div>
+                        <div class="NewsFormMeet__preview__bottom">
+                            <label for="text">Email участников</label>
+                            <input  id="mail" type="text" class="pain NewsFormMeet__input NewsFormMeet__preview__bottom__input"  placeholder="Введите почту через запятую" onkeydown="validation()" required/>
+                            <div class="NewsFormMeet__response-backend">Что-то не так. Проверьте введенную почту</div>
+                        </div>
+                        <button type="submit" class="NewsFormMeet__button-submit">Готово</button>
+                         <!--Begining Calendar 
+                    Design File For Calendar In POP UP
+                              -->
+                              <div class=" PopUpMeetingCalendar">
+                                <div class="calendar">
+                                   <div class="calendar__months">
+                                     <div class="calendar__arrow"id="arrow-left"></div>
+                                     <div class="calendar__dates">
+                                       <h3 class="calendar__title">Января</h3>
+                                       <p class="calendar__content"></p>
+                                     </div>
+                                     <div class="calendar__arrow" id="arrow-right"></div>
+                                   </div>
+                                     <div class="calendar__weekDays">
+                                       <div class="calendar__weekDay">Пн</div>
+                                       <div class="calendar__weekDay">Вт</div>
+                                       <div class="calendar__weekDay">Ср</div>
+                                       <div class="calendar__weekDay">Чт</div>
+                                       <div class="calendar__weekDay">Пт</div>
+                                       <div class="calendar__weekDay calendar__weekend">Сб</div>
+                                       <div class="calendar__weekDay calendar__weekend">Вс</div>
+                                     </div>
+                                     <div class="calendar__Days">
+                                        <div class="calendar__prev-date calendar__date-low">26</div>
+                                        <div class="calendar__prev-date calendar__date-low">27</div>
+                                        <div class="calendar__prev-date calendar__date-low">28</div>
+                                        <div class="calendar__prev-date calendar__date-low">29</div>
+                                        <div class="calendar__prev-date calendar__date-low">30</div>
+                                        <div class="calendar__prev-date calendar__date-low calendar__elementRed">31</div>
+                                        <div class="calendar__prev-date calendar__elementRed">1</div>
+                                         <div class="calendar__day">2</div>
+                                         <div class="calendar__day">3</div>
+                                         <div class="calendar__day">4</div>
+                                         <div class="calendar__day">5</div>
+                                         <div class="calendar__day">6</div>
+                                         <div class="calendar__day calendar__elementRed">7</div>
+                                         <div class="calendar__day calendar__elementRed">8</div>
+                                         <div class="calendar__day">9</div>
+                                         <div class="calendar__day">10</div>
+                                         <div class="calendar__day">12</div>
+                                         <div class="calendar__day">12</div>
+                                         <div class="calendar__day">13</div>
+                                         <div class="calendar__day calendar__elementRed">14</div>
+                                         <div class="calendar__day calendar__elementRed">15</div>
+                                         <div class="calendar__day">16</div>
+                                         <div class="calendar__day">17</div>
+                                         <div class="calendar__day">18</div>
+                                         <div class="calendar__day">19</div>
+                                         <div class="calendar__day">20</div>
+                                         <div class="calendar__day calendar__elementRed">21</div>
+                                         <div class="calendar__day calendar__elementRed">22</div>
+                                         <div class="calendar__day">23</div>
+                                         <div class="calendar__day today">24</div>
+                                         <div class="calendar__day">25</div>
+                                         <div class="calendar__day">26</div>
+                                         <div class="calendar__day">27</div>
+                                         <div class="calendar__day calendar__elementRed">28</div>
+                                         <div class="calendar__day calendar__elementRed">29</div>
+                                         <div class="calendar__day">30</div>
+                                         <div class="calendar__da calendar__elementRedy">31</div>
+                                         <div class="calendar__next-date calendar__date-low">1</div>
+                                         <div class="calendar__next-date calendar__date-low">2</div>
+                                         <div class="calendar__next-date calendar__date-low">3</div>
+                                         <div class="calendar__next-date calendar__date-low calendar__elementRed">4</div>
+                                         <div class="calendar__next-date calendar__date-low calendar__elementRed">5</div>
+                                     </div>
+                                </div>
+                          </div><!--End Calendar IN POP UP -->
+                     <form>
+                  </div>
+              </div>
+            <!--End NewsFormMeet-->
+        </div>
+     </div>
+     <script src="/js/AppCalendar.js"></script>
+     <script src="/js/app.js"></script>
+     <!-- <script src="js/calendar.js"></script> -->
+</body>
+</html>

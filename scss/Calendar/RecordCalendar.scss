@@ -1,0 +1,17 @@
+
+// This is an Classe Issue in HTML File ===> Record.html ,
+//It's Design is only for Element positioning with (Position-Absolute)
+/// ==> But Full Calendar Design is in SCSS File ==> Calendar.scss
+.RecordCalendar {
+    position: absolute;
+    top: 4.55em;
+    left: 42em;
+    @include AllCalendar();
+}
+
+
+
+.RecordOpenCalendar {//Element Toggle in JS  file AppCalendar.js
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path .85s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
